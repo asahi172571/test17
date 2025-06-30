@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>謎解き完全版</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="teamInput">
+    <input type="text" id="teamName" placeholder="チーム名を入力">
+    <button onclick="startGame()">スタート</button>
+  </div>
+  <div id="gameArea" style="display:none;">
+    <div id="timer">60:00</div>
+    <div id="questionBox"></div>
+    <input type="text" id="answerInput" placeholder="答えを入力">
+    <button onclick="submitAnswer()">送信</button>
+    <div id="feedback"></div>
+    <div id="history"></div>
+  </div>
+</body>
+</html>

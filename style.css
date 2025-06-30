@@ -1,0 +1,5 @@
+
+body { background: #000; color: #fff; font-family: sans-serif; }
+#timer { position: fixed; top: 10px; left: 10px; font-size: 24px; color: red; }
+#feedback { font-size: 20px; margin-top: 10px; }
+#history { margin-top: 20px; }
