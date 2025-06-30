@@ -1,5 +1,69 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-body { background: #000; color: #fff; font-family: sans-serif; }
-#timer { position: fixed; top: 10px; left: 10px; font-size: 24px; color: red; }
-#feedback { font-size: 20px; margin-top: 10px; }
-#history { margin-top: 20px; }
+#teamInput {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#headerTeam {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#timer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.chat-bubble {
+  max-width: 80%;
+  padding: 10px;
+  margin: 0 0 8px 0;
+  border-radius: 12px;
+  animation: fadeIn 0.4s;
+}
+
+.chat-bubble.system {
+  background: #222;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.history-item {
+  padding: 4px 8px;
+  font-size: 0.9em;
+  border-bottom: 1px solid #444;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+  75% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
