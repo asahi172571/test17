@@ -11,8 +11,11 @@
     <input type="text" id="teamName" placeholder="チーム名を入力">
     <button onclick="startGame()">スタート</button>
   </div>
+
   <div id="gameArea" style="display:none;">
+    <div id="headerTeam"></div>
     <div id="timer">60:00</div>
+    <div id="chatArea" class="chat-container"></div>
     <div id="questionBox"></div>
     <input type="text" id="answerInput" placeholder="答えを入力">
     <button onclick="submitAnswer()">送信</button>
